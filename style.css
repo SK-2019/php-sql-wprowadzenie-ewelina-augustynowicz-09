@@ -1,0 +1,48 @@
+body {
+background-color: #EE82EE;
+}
+
+.nav_link{
+text-decoration: none;
+background-color: lightblue;
+padding: 8px;
+width: 10%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorRed {
+  background-color: #CC00FF;
+  width: 20%;
+}
+
+.colorBlue {
+  background-color: lightblue;
+  width: 100%;
+}
+
+.colorGreen {
+  background-color: lightgreen;
+  width: 70%;
+}
+
+.bottom {
+  bottom: auto;
+  background-color: white;
+  border: rgb(247, 135, 56);
+  color: white;
+  padding: 11px 18px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+
+.bottom:hover {
+  background-color: GreenYellow;
+  color: rgb(248, 16, 16);
+}
