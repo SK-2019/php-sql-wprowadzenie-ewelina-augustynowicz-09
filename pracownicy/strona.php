@@ -17,7 +17,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
 <a class="nav_link" href="pracownicy/dataiczas.php"> Data i czas</a><br />
 <a class="nav_link" href="pracownicy/formularz.html">Formularz</a><br />
 </div> 
-   
+
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
     <h1><b>Jesteś na strona.php</b></h1>
 
