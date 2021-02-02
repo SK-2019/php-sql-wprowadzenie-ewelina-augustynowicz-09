@@ -11,7 +11,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ewelina Augustynowicz 2Ti gr2</title>
     <link rel="stylesheet" href="assets/style.css" />
-  </head>
+  </head> 
   <body>
     <div class="container">
             <div class="item colorBlue">

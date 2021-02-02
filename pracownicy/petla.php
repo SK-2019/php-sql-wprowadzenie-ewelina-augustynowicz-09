@@ -12,7 +12,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
     <title>Ewelina Augustynowicz 2Ti gr2</title>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <body>
+  <body> 
     <div class="container">
             <div class="item colorBlue">
         <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>

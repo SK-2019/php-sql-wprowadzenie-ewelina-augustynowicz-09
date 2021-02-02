@@ -17,7 +17,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 ?>
-
+ 
 <html>
   <head>
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
