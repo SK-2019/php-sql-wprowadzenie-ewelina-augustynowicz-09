@@ -62,7 +62,7 @@ if (!$conn) {
       </div>
     
 <div class="item colorGreen">
-  <h3> something </h3>
+  <h3> ... </h3>
 </div>
 
   </body>
