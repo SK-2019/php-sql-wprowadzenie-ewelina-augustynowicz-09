@@ -1,3 +1,8 @@
+<?php
+//Logowanie do serwera mySQL: 
+require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
+?>
+
 <html>
   <head>
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

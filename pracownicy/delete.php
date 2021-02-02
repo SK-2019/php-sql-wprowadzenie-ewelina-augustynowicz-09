@@ -1,3 +1,7 @@
+<?php
+//Logowanie do serwera mySQL: 
+require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
+?>
 
 <!DOCTYPE html>
 <html>
