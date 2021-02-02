@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
