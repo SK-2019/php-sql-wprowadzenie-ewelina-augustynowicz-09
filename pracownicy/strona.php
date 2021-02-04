@@ -1,7 +1,7 @@
 <html>
 <head>
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <div class="button"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></div><br>
