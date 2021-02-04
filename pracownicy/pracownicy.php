@@ -21,7 +21,7 @@ if (!$conn) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pracownicy</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <div class="container">
