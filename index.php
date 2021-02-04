@@ -21,7 +21,7 @@ if (!$conn) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ewelina Augustynowicz 2Ti gr2</title>
+    <title>Ewelina Augustynowicz 2Ti gr.2</title>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
@@ -62,7 +62,7 @@ if (!$conn) {
       </div>
     
 <div class="item colorGreen">
-  <h3> something </h3>
+  <h3> ... </h3>
 </div>
 
   </body>

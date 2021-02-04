@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $servername = "mysql-ewelina.alwaysdata.net";
 $username = "ewelina";
@@ -12,3 +13,6 @@ if ($conn->connect_error)
   die("Connection failed: " . $conn->connect_error);
 }
 ?>
+=======
+
+>>>>>>> 07a48b741c6ce098316cb67f0043fa9a4a5c47fa
