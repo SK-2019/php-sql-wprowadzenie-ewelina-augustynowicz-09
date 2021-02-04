@@ -1,8 +1,3 @@
-<?php
-//Logowanie do serwera mySQL: 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
-?>
-
 <html>
   <head>
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,7 +17,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
         <div class="nav">
           <h2> Menu:</h2>
           <ul>
-            <li><a href="https://github.com/ewelina-augustynowicz-09/sql-php-wprowadzenie">github</a></li>
+            <li><a href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></li>
             <br>
             <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
             <br>
