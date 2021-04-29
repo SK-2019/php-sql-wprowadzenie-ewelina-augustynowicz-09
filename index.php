@@ -38,21 +38,21 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/pracownicy.php"> Pracownicy </a></li>
+            <li><a class="nav_link" href="../pracownicy/pracownicy.php"> Pracownicy </a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/pracownicyiorganizacja.php"> Pracownicy i organizacja </a></li>
+            <li><a class="nav_link" href="../pracownicy/pracownicyiorganizacja.php"> Pracownicy i organizacja </a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/funkcjeAgregujace.php"> Funkcje agregujące</a></li>
+            <li><a class="nav_link" href="../pracownicy/funkcjeAgregujace.php"> Funkcje agregujące</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/dataiczas.php"> Data i czas</a></li>
+            <li><a class="nav_link" href="../pracownicy/dataiczas.php"> Data i czas</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/formularz.html">Formularz</a></li>
+            <li><a class="nav_link" href="../pracownicy/formularz.html">Formularz</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/insert.php">Insert</a></li>
+            <li><a class="nav_link" href="../pracownicy/insert.php">Insert</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/daneDoBazy.php">Dane do bazy</a></li>
+            <li><a class="nav_link" href="../pracownicy/daneDoBazy.php">Dane do bazy</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/delete.php">Delete</a></li>
+            <li><a class="nav_link" href="../pracownicy/delete.php">Delete</a></li>
           </ul> 
       </div> 
       </div>
