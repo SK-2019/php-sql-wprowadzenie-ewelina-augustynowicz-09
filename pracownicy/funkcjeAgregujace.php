@@ -29,11 +29,11 @@ if (!$conn) {
       </div> 
     <div class="item colorRed">
         <div class="nav">
-          <h2> Menu:</h2>
+        <h2> Menu:</h2>
           <ul>
             <li><a href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></li>
             <br>
-            <li><a class="nav_link" href="../index.php"> Strona głowna</a></li>
+            <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
             <br>
             <li><a class="nav_link" href="pracownicy/pracownicy.php"> Pracownicy </a></li>
             <br>
@@ -49,11 +49,7 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="pracownicy/daneDoBazy.php">Dane do bazy</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/petla.php">Pętla</a></li>
-            <br>
             <li><a class="nav_link" href="pracownicy/delete.php">Delete</a></li>
-            <br>
-            <li><a class="nav_link" href="../biblioteka/ksiazki.php">Książki</a></li>
           </ul> 
       </div> 
       </div>

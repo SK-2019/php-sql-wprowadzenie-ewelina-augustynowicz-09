@@ -52,17 +52,13 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="pracownicy/daneDoBazy.php">Dane do bazy</a></li>
             <br>
-            <li><a class="nav_link" href="pracownicy/petla.php">Pętla</a></li>
-            <br>
             <li><a class="nav_link" href="pracownicy/delete.php">Delete</a></li>
-            <br>
-            <li><a class="nav_link" href="biblioteka/ksiazki.php">Książki</a></li>
           </ul> 
       </div> 
       </div>
     
 <div class="item colorGreen">
-  <h3> ... </h3>
+  <h3> Hello :) </h3>
 </div>
 
   </body>

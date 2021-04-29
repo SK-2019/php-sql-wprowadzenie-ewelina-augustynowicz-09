@@ -4,13 +4,30 @@
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-<div class="button"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></div><br>
-<a class="nav_link" href="../index.php"> Strona głowna</a><br />
-<a class="nav_link" href="pracownicy/pracownicy.php"> Pracownicy </a><br />
-<a class="nav_link" href="pracownicy/pracownicyiorganizacja.php"> Pracownicy i organizacja </a><br />
-<a class="nav_link" href="pracownicy/funkcjeAgregujace.php"> Funkcje agregujące </a><br />
-<a class="nav_link" href="pracownicy/dataiczas.php"> Data i czas</a><br />
-<a class="nav_link" href="pracownicy/formularz.html">Formularz</a><br />
+<div class="item colorRed">
+        <div class="nav">
+<h2> Menu:</h2>
+          <ul>
+            <li><a href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></li>
+            <br>
+            <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/pracownicy.php"> Pracownicy </a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/pracownicyiorganizacja.php"> Pracownicy i organizacja </a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/funkcjeAgregujace.php"> Funkcje agregujące</a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/dataiczas.php"> Data i czas</a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/formularz.html">Formularz</a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/insert.php">Insert</a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/daneDoBazy.php">Dane do bazy</a></li>
+            <br>
+            <li><a class="nav_link" href="pracownicy/delete.php">Delete</a></li>
+          </ul> 
 </div> 
 
 <h2>Ewelina Augustynowicz<br>klasa 2Ti grupa 2<br>numer 1</h2>
