@@ -33,6 +33,7 @@ if (!$conn) {
     <div class="item colorRed">
         <div class="nav">
           <h2> Menu:</h2>
+          <h2> Menu:</h2>
           <ul>
             <li><a href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></li>
             <br>
