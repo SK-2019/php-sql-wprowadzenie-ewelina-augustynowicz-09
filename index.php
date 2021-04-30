@@ -35,7 +35,7 @@ if (!$conn) {
         <div class="nav">
           <h2> Menu:</h2>
           <ul>
-            <li><a href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></li>
+            <li><a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-ewelina-augustynowicz-09">github</a></li>
             <br>
             <li><a class="nav_link" href="index.php"> Strona głowna</a></li>
             <br>
