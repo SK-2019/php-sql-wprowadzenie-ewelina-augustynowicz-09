@@ -57,6 +57,9 @@ if (!$conn) {
             <li><a class="nav_link" href="../pracownicy/daneDoBazy.php">Dane do bazy</a></li>
             <br>
             <li><a class="nav_link" href="../pracownicy/delete.php">Delete</a></li>
+            <br>
+            <li><a class="nav_link" href="../flexbox+menu/flexbox.html"> Flexbox + menu</a></li>
+            <br>
           </ul> 
       </div> 
       </div>

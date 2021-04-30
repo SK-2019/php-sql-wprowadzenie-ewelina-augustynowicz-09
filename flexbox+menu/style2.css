@@ -1,0 +1,40 @@
+.containerA {
+    background-color: rgb(89, 3, 122);
+    width: 50%;
+    height: 500px;
+    margin: 10px;
+}
+
+.A {
+    background-color:  rgb(8, 10, 145)e;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.a {
+    display: block;
+    padding: 1rem;
+    background-color: rgb(146, 19, 140);
+    border-radius: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2%;
+    width: 60px;
+}
+
+a:abc {
+    background-color: rgba(66, 40, 185, 0.7);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    color: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
