@@ -30,10 +30,10 @@ if (!$conn) {
             <div class="item colorBlue">
         <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
         <h1><b>Strona główna</b></h1> 
+        <audio controls autoplay loop>
+        <source src="https://vgmsite.com/soundtracks/addams-family-values/exhvgxneho/02%20Addams%20Family%20Values.mp3" type="audio/mpeg">
+        </audio>
       </div> 
-      <audio controls autoplay loop>
-<source src="https://vgmsite.com/soundtracks/addams-family-values/exhvgxneho/02%20Addams%20Family%20Values.mp3" type="audio/mpeg">
-</audio>
     <div class="item colorRed">
         <div class="nav">
           <h2> Menu:</h2>
