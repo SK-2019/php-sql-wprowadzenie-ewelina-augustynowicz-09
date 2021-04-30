@@ -23,10 +23,10 @@ if (!$conn) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ewelina Augustynowicz 2Ti gr.2</title>
     <link rel="stylesheet" href="style.css" />
+    <img src="https://image.freepik.com/free-vector/halloween-background-with-graveyard-castle-scene_11700-399.jpg" alt="background" />
   </head>
   <body>
-  selektor { background-image: url(C:\Users\augus\Desktop\game things\fnaf\g4.jpg) }
-    <div class="container">
+      <div class="container">
             <div class="item colorBlue">
         <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
         <h1><b>Strona główna</b></h1> 
