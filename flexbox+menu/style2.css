@@ -28,13 +28,15 @@
 }
 
 a:abc {
-    background-color: rgba(66, 40, 185, 0.7);
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    color: rgb(255,255,255);
-    display: flex;
-    justify-content: center;
+    background-color: rgb(18, 83, 158);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 1px;
+    transition: 0.1s;
+    margin: 1px;
+    display: block;
+    list-style: none;
     align-items: center;
-    width: fit-content;
+    justify-content: flex-start;
 }
