@@ -25,6 +25,7 @@ if (!$conn) {
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  selektor { background-image: url(C:\Users\augus\Desktop\game things\fnaf\g4.jpg) }
     <div class="container">
             <div class="item colorBlue">
         <h2>Ewelina Augustynowicz klasa 2Ti grupa 2 numer 1</h2>
