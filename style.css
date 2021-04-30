@@ -4,6 +4,10 @@ body {
   background-size:100% 100%;
  }
 
+.tekst {
+  color: #D9D9D9;
+}
+
 .nav_link{
 text-decoration: none;
 background-color: rgba(173, 216, 230, 0);
@@ -17,17 +21,17 @@ width: 10%;
 }
 
 .colorRed {
-  background-color: #8c00ff46;
+  background-color: #8c00ff00;
   width: 20%;
 }
 
 .colorBlue {
-  background-color: #8c00ff46;
+  background-color: #8c00ff00;
   width: 100%;
 }
 
 .colorGreen {
-  background-color: #8c00ff46;
+  background-color: #8c00ff00;
   width: 70%;
 }
 
