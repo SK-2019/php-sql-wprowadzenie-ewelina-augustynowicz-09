@@ -1,8 +1,10 @@
-
+body {
+  background-image: url("https://image.freepik.com/free-vector/halloween-background-with-graveyard-castle-scene_11700-399.jpg");
+ }
 
 .nav_link{
 text-decoration: none;
-background-color: lightblue;
+background-color: rgba(173, 216, 230, 0);
 padding: 8px;
 width: 10%;
 }
@@ -13,17 +15,17 @@ width: 10%;
 }
 
 .colorRed {
-  background-color: #CC00FF;
+  background-color: #cc00ff00;
   width: 20%;
 }
 
 .colorBlue {
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0);
   width: 100%;
 }
 
 .colorGreen {
-  background-color: lightgreen;
+  background-color: rgba(144, 238, 144, 0);
   width: 70%;
 }
 

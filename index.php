@@ -23,7 +23,6 @@ if (!$conn) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ewelina Augustynowicz 2Ti gr.2</title>
     <link rel="stylesheet" href="style.css" />
-    <img src="https://image.freepik.com/free-vector/halloween-background-with-graveyard-castle-scene_11700-399.jpg" alt="background" />
   </head>
   <body>
       <div class="container">
