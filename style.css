@@ -10,6 +10,7 @@ body {
 
 .nav_link{
 text-decoration: none;
+color: #D9D9D9;
 background-color: rgb(0, 191, 255);
 padding: 8px;
 width: 10%;
