@@ -67,6 +67,7 @@ a:hover {
     text-align: center;
     text-decoration: none;
     width: 60px;
+    justify-content: flex-end;
 }
 b:hover {
     background-color: rgb(13, 75, 146);
