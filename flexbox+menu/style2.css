@@ -52,6 +52,7 @@ a:hover {
     width: 500px;
     height: 300px;
     margin: 10px;
+    justify-content: flex-end;
 }
 
 .b {
@@ -66,4 +67,17 @@ a:hover {
     text-align: center;
     text-decoration: none;
     width: 60px;
+}
+b:hover {
+    background-color: rgb(13, 75, 146);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 1px;
+    transition: 0.1s;
+    margin: 1px;
+    display: block;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
 }
