@@ -27,7 +27,7 @@
 }
 
 a:hover {
-    background-color: rgb(18, 83, 158);
+    background-color: rgb(13, 75, 146);
     color: white;
     text-decoration: none;
     padding: 20px;
@@ -38,4 +38,32 @@ a:hover {
     list-style: none;
     align-items: center;
     justify-content: flex-start;
+}
+
+.containerB {
+    background-color: rgb(89, 3, 122);
+    width: 1000px;
+    height: 700px;
+    margin: 10px;
+}
+
+.navb {
+    background-color:  blueviolet;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+}
+
+.b {
+    display: block;
+    padding: 1rem;
+    background-color: rgb(146, 19, 140);
+    border-radius: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 60px;
 }
