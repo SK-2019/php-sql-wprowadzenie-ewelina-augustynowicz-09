@@ -85,15 +85,12 @@ b:hover {
     background-color: rgb(89, 3, 122);
     width: 1000px;
     height: 700px;
-    justify-content: flex-end;
-    display: flex;
 }
 
 .navc {
     background-color: blueviolet;
     width: 500px;
     height: 300px;
-    justify-content: flex-end;
 }
 
 .c {
@@ -121,5 +118,4 @@ c:hover {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: flex-end;
 }
