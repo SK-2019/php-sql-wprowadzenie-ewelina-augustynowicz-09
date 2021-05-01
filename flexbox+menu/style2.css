@@ -91,6 +91,7 @@ b:hover {
     background-color: blueviolet;
     width: 500px;
     height: 300px;
+    align-items: flex-end;
 }
 
 .c {
@@ -118,25 +119,4 @@ c:hover {
     display: flex;
     list-style: none;
     align-items: center;
-}
-
-.navc1 {
-    background-color: rgba(137, 43, 226, 0);
-    width: 500px;
-    height: 300px;
-}
-
-.c1 {
-    display: flex;
-    padding: 1rem;
-    background-color: rgba(146, 19, 140, 0);
-    border-radius: 10px;
-    margin: 5px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 5px;
-    text-align: center;
-    text-decoration: none;
-    width: 60px;
-    justify-content: center;
 }
