@@ -43,6 +43,7 @@ a:hover {
     width: 1000px;
     height: 700px;
     justify-content: flex-end;
+    display: flex;
 }
 
 .navb {
@@ -64,7 +65,7 @@ a:hover {
     text-align: center;
     text-decoration: none;
     width: 60px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 b:hover {
     background-color: rgb(13, 75, 146);
