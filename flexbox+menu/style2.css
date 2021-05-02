@@ -94,7 +94,7 @@ b:hover {
     width: 500px;
     height: 300px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .c {
@@ -118,7 +118,7 @@ c:hover {
     color: white;
     text-decoration: none;
     padding: 20px;
-    border-radius: 1px;
+    border-radius: 30px;
     transition: 0.1s;
     margin: 1px;
     display: flex;
@@ -141,7 +141,7 @@ c:hover {
     width: 500px;
     height: 300px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .d {
