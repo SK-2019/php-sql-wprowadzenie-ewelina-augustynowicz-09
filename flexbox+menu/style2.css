@@ -132,8 +132,8 @@ c:hover {
     width: 1000px;
     height: 700px;
     display: flex;
-    align-self: flex-end;
-    order: 4;
+    justify-content:flex-end;
+    align-items:flex-end;
 }
 
 .navd {
@@ -141,8 +141,7 @@ c:hover {
     width: 500px;
     height: 300px;
     display: flex;
-    align-self: flex-end;
-    order: 4;
+    align-items: flex-end;
 }
 
 .d {
