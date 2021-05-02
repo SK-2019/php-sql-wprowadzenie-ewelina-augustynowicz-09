@@ -173,3 +173,21 @@ d:hover {
     display: flex;
     align-items: flex-end;
 }
+
+.containerF {
+    background-color: rgb(89, 3, 122);
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+.navf {
+    background-color: blueviolet;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
