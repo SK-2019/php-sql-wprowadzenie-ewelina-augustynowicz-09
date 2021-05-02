@@ -85,6 +85,7 @@ b:hover {
     background-color: rgb(89, 3, 122);
     width: 1000px;
     height: 700px;
+    display: flex;
     align-items: flex-end;
 }
 
@@ -109,6 +110,8 @@ b:hover {
     text-decoration: none;
     width: 60px;
     justify-content: center;
+    display: flex;
+    align-items: flex-end;
 }
 c:hover {
     background-color: rgb(13, 75, 146);
@@ -120,5 +123,7 @@ c:hover {
     margin: 1px;
     display: flex;
     list-style: none;
-    align-items: center;
+    display: flex;
+    align-items: flex-end;
 }
+
