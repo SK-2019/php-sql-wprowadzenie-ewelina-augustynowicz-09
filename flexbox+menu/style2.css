@@ -85,12 +85,14 @@ b:hover {
     background-color: rgb(89, 3, 122);
     width: 1000px;
     height: 700px;
+    align-items: flex-end;
 }
 
 .navc {
     background-color: blueviolet;
     width: 500px;
     height: 300px;
+    display: flex;
     align-items: flex-end;
 }
 
