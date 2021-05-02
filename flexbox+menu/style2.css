@@ -179,15 +179,12 @@ d:hover {
     width: 1000px;
     height: 700px;
     display: flex;
-    justify-content:flex-end;
-    align-items:flex-end;
+    justify-content:center;
+    align-items:center;
 }
 
 .navf {
     background-color: blueviolet;
     width: 500px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
