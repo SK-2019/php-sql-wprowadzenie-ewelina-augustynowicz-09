@@ -127,3 +127,50 @@ c:hover {
     align-items: flex-end;
 }
 
+.containerD {
+    background-color: rgb(89, 3, 122);
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    align-self: flex-end;
+    order: 4;
+}
+
+.navd {
+    background-color: blueviolet;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-self: flex-end;
+    order: 4;
+}
+
+.d {
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(146, 19, 140);
+    border-radius: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+}
+d:hover {
+    background-color: rgb(13, 75, 146);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 1px;
+    transition: 0.1s;
+    margin: 1px;
+    display: flex;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
