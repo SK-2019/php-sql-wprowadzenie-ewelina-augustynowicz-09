@@ -129,6 +129,7 @@ transition: 500ms;
     color: rgb(146, 19, 140);
     color: white;
     text-decoration: none;
+    display: block;
     
     transition: color 200ms;
   }
@@ -188,6 +189,7 @@ transition: 500ms;
     color: rgb(146, 19, 140);
     color: white;
     text-decoration: none;
+    display: block;
     
     transition: color 200ms;
   }
