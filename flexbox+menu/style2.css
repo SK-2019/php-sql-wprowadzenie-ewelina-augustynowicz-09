@@ -54,31 +54,52 @@ a:hover {
 }
 
 .b {
-    display: flex;
-    padding: 1rem;
+    position: relative;
     background-color: rgb(146, 19, 140);
     border-radius: 10px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
     margin: 5px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    text-align: center;
-    text-decoration: none;
-    width: 60px;
-    justify-content: center;
-}
-b:hover {
-    background-color: rgb(13, 75, 146);
+    color: rgb(146, 19, 140);
     color: white;
     text-decoration: none;
-    padding: 20px;
-    border-radius: 1px;
-    transition: 0.1s;
-    margin: 1px;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: flex-end;
+    
+    transition: color 200ms;
+  }
+  
+  .b:hover {
+    color: white;
+  }
+  
+  .b::before {
+    content: '';
+    background-color: rgb(13, 75, 146);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+transition: 500ms;
+  }
+
+.b-slide-top-revert {
+  color: white;
+}
+
+.b-slide-top-revert:hover {
+  color: var(--color-primary);
+}
+
+.b-slide-top-revert::before {
+  border-radius: 0 0 50% 50%;
+  height: 200%;
+}
+
+.b-slide-top-revert:hover::before {
+  height: 0;
 }
 
 .containerC {
