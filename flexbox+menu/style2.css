@@ -119,48 +119,21 @@ transition: 500ms;
     align-items: flex-start;
 }
 
+
 .c {
-    position: relative;
-    background-color: rgb(146, 19, 140);
-    border-radius: 10px;
-    padding: 10px 40px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 5px;
-    color: rgb(146, 19, 140);
-    color: white;
-    text-decoration: none;
-    display: block;
-    
-    transition: color 200ms;
-  }
-  
-  .c:hover {
-    color: white;
-  }
-  
-  .c::before {
-    content: '';
-    background-color: rgb(13, 75, 146);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    
-    transition: transform 500ms;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-  }
-
-.c-slide-top::before {
-  transform: scaleY(0);
+width: 30px;
+height: 20px;
+background-color: rgb(146, 19, 140);
+margin: 5px;
+padding: 10px 40px;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+cursor: pointer;
+transition: 0.3s;
+display: flex;
 }
 
-.c-slide-top:hover::before {
-  transform: scaleY(1);
-}
 
 .containerD {
     background-color: rgb(89, 3, 122);
