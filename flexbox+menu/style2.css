@@ -54,17 +54,19 @@ a:hover {
 }
 
 .b {
-  padding: 15px 40px;
-  border-style: none;
-  margin-top: 50px;
-  background-color: purple;
-  border-radius: 20px;
-  box-shadow: 0 0 0 6px black, 0 0 0 12px purple;
-  font-size: 40px;
-  font-family: arial;
-  text-transform: uppercase;
-  transition: 0.3s;
-  cursor: pointer;
+padding: 10px 10px;
+border-style: none;
+margin-top: 50px;
+margin: 15px;
+background-color: purple;
+border-radius: 20px;
+box-shadow: 0 0 0 6px black, 0 0 0 12px purple;
+font-size: 10px;
+font-family: arial;
+text-transform: uppercase;
+transition: 0.3s;
+cursor: pointer;
+display: inline-flex;
 }
 
 .b:hover {
@@ -132,7 +134,7 @@ display: flex;
     color: rgb(146, 19, 140);
     color: white;
     text-decoration: none;
-    display: block;
+    display: inline-flex;
     
     transition: color 200ms;
   }
@@ -147,8 +149,8 @@ display: flex;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
     z-index: -1;
     
     transition: transform 500ms;
