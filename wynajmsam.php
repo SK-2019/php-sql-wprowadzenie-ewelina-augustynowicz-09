@@ -86,12 +86,9 @@ if (!$conn) {
 
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM wynajmsam');
+    $result = $conn->query('SELECT id_klienta, imie_klienta, nazwisko_klienta, prawojazdy_lata, data_wyporzyczenie, data_oddania FROM wynajmsam');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id samochodu</th>");
-    echo("<th>marka samochodu</th>");
-    echo("<th>model samochodu</th>");
     echo("<th>id klienta</th>");
     echo("<th>imie klienta</th>");
     echo("<th>nazwisko klienta</th>");
@@ -100,7 +97,7 @@ if (!$conn) {
     echo("<th>data_oddania</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
+    echo("<td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
@@ -118,6 +115,29 @@ if (!$conn) {
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
     echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td>");
+    echo("</tr>");
+    }
+    echo("</table>")
+    ?>
+</main>
+
+<main>
+    <?php
+    $result = $conn->query('SELECT * FROM wynajmsam');
+    echo("<table border>");
+    echo("<table>");
+    echo("<th>id samochodu</th>");
+    echo("<th>marka samochodu</th>");
+    echo("<th>model samochodu</th>");
+    echo("<th>id klienta</th>");
+    echo("<th>imie klienta</th>");
+    echo("<th>nazwisko klienta</th>");
+    echo("<th>prawojazdy (lata)</th>");
+    echo("<th>data wyporzyczenie</th>");
+    echo("<th>data_oddania</th>");
+    while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
