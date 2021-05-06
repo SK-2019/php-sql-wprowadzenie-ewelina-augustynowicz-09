@@ -84,6 +84,7 @@ if (!$conn) {
           </ul> 
   </header> 
 
+  <h2><B>Klienci:</B></h2>
 <main>
     <?php
     $result = $conn->query('SELECT id_klienta, imie_klienta, nazwisko_klienta, prawojazdy_lata, data_wyporzyczenie, data_oddania FROM wynajmsam');
@@ -94,7 +95,7 @@ if (!$conn) {
     echo("<th>nazwisko klienta</th>");
     echo("<th>prawojazdy (lata)</th>");
     echo("<th>data wyporzyczenie</th>");
-    echo("<th>data_oddania</th>");
+    echo("<th>data oddania</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
     echo("<td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
@@ -104,6 +105,7 @@ if (!$conn) {
     ?>
 </main>
 
+<h2><B>Samochody:</B></h2>
 <main>
     <?php
     $result = $conn->query('SELECT id_samochodu, marka_samochodu, model_samochodu FROM wynajmsam');
@@ -121,6 +123,7 @@ if (!$conn) {
     ?>
 </main>
 
+<h2><B>Klienci i wyporzyczone samochodu</B></h2>
 <main>
     <?php
     $result = $conn->query('SELECT * FROM wynajmsam');
@@ -134,7 +137,7 @@ if (!$conn) {
     echo("<th>nazwisko klienta</th>");
     echo("<th>prawojazdy (lata)</th>");
     echo("<th>data wyporzyczenie</th>");
-    echo("<th>data_oddania</th>");
+    echo("<th>data oddania</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
     echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
