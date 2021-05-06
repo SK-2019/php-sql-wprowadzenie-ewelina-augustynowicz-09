@@ -84,7 +84,7 @@ if (!$conn) {
           </ul> 
   </header> 
 
-  <h2><B>Klienci:</B></h2>
+  <h2>Klienci:</h2>
 <main>
     <?php
     $result = $conn->query('SELECT id_klienta, imie_klienta, nazwisko_klienta, prawojazdy_lata, data_wyporzyczenie, data_oddania FROM wynajmsam');
@@ -105,7 +105,7 @@ if (!$conn) {
     ?>
 </main>
 
-<h2><B>Samochody:</B></h2>
+<h2>Samochody:</h2>
 <main>
     <?php
     $result = $conn->query('SELECT id_samochodu, marka_samochodu, model_samochodu FROM wynajmsam');
@@ -123,7 +123,7 @@ if (!$conn) {
     ?>
 </main>
 
-<h2><B>Klienci i wyporzyczone samochodu</B></h2>
+<h2>Klienci i wyporzyczone samochodu</h2>
 <main>
     <?php
     $result = $conn->query('SELECT * FROM wynajmsam');
