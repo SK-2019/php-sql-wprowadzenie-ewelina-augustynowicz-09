@@ -79,10 +79,7 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href=""> piec </a></li>
           </ul> 
-</div>
-</div>
 
-<div class="item colorGreen">
 <?php
 $result = $conn->query('SELECT * FROM wynajmsam');
 echo("<table border>");
@@ -103,6 +100,7 @@ echo("</tr>");
 }
 echo("</table>")
 ?>
-
+</div>
+</div>
   </body>
 </html>
