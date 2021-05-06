@@ -60,15 +60,49 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="../flexbox+menu/flexbox.html"> Flexbox + menu</a></li>
             <br>
-            <li><a class="nav_link" href="../wieledowielu.php.php"> Relacja wiele do wielu</a></li>
           </ul> 
       </div> 
       </div>
     
 <div class="item colorGreen">
   <h3> Hello :) </h3>
+  <div class="nav">
+          <h2> Menu:</h2>
+          <ul>
+            <li><a class="nav_link" href="wynajmsam.php"> wynajem samochodów </a></li>
+            <br>
+            <li><a class="nav_link" href=""> dwa </a></li>
+            <br>
+            <li><a class="nav_link" href=""> trzy </a></li>
+            <br>
+            <li><a class="nav_link" href=""> cztery </a></li>
+            <br>
+            <li><a class="nav_link" href=""> piec </a></li>
+          </ul> 
 </div>
 </div>
+
+<div class="item colorGreen">
+<?php
+$result = $conn->query('SELECT * FROM wynajmsam');
+echo("<table border>");
+echo("<table>");
+echo("<th>id samochodu</th>");
+echo("<th>marka samochodu</th>");
+echo("<th>model samochodu</th>");
+echo("<th>id klienta</th>");
+echo("<th>imie klienta</th>");
+echo("<th>nazwisko klienta</th>");
+echo("<th>prawojazdy (lata)</th>");
+echo("<th>data wyporzyczenie</th>");
+echo("<th>data_oddania</th>");
+while($row = $result->fetch_assoc()) {
+echo("<tr>");
+echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
+echo("</tr>");
+}
+echo("</table>")
+?>
 
   </body>
 </html>
