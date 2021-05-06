@@ -107,6 +107,23 @@ if (!$conn) {
     ?>
 </main>
 
+<main>
+    <?php
+    $result = $conn->query('SELECT id_samochodu, marka_samochodu, model_samochodu FROM wynajmsam');
+    echo("<table border>");
+    echo("<table>");
+    echo("<th>id samochodu</th>");
+    echo("<th>marka samochodu</th>");
+    echo("<th>model samochodu</th>");
+    while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td>");
+    echo("</tr>");
+    }
+    echo("</table>")
+    ?>
+</main>
+
 </div>
 </div>
 </body>
