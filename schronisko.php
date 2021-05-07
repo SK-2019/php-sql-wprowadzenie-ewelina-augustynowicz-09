@@ -122,7 +122,7 @@ if (!$conn) {
 
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM koty, psy WHERE id=id, wiek_lata=wiek_lata, płeć=płeć, rasa=rasa, imie_kota=imie_psa');
+    $result = $conn->query('SELECT * FROM koty AND psy WHERE id=id, wiek_lata=wiek_lata, płeć=płeć, rasa=rasa, imie_kota=imie_psa');
     echo("<table border>");
     echo("<table>");
     echo("<th>id</th>");
