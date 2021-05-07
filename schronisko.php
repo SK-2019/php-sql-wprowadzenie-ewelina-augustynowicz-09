@@ -122,22 +122,18 @@ if (!$conn) {
 
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM koty AND psy');
+    $result = $conn->query('SELECT * FROM koty, psy WHERE id=id, wiek_lata=wiek_lata, płeć=płeć, rasa=rasa');
     echo("<table border>");
     echo("<table>");
     echo("<th>id</th>");
     echo("<th>imie kota</th>");
-    echo("<th>rasa</th>");
-    echo("<th>wiek (lata)</th>");
-    echo("<th>płeć</th>");
-    echo("<th>id</th>");
     echo("<th>imie psa</th>");
     echo("<th>rasa</th>");
     echo("<th>wiek (lata)</th>");
     echo("<th>płeć</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id"]."</td><td>".$row["imie_kota"]."</td><td>".$row["rasa"]."</td><td>".$row["wiek_lata"]."</td><td>".$row["płeć"]."</td><td>".$row["id"]."</td><td>".$row["imie_psa"]."</td><td>".$row["rasa"]."</td><td>".$row["wiek_lata"]."</td><td>".$row["płeć"]."</td>");
+    echo("<td>".$row["id"]."</td><td>".$row["imie_kota"]."</td><td>".$row["imie_psa"]."</td><td>".$row["rasa"]."</td><td>".$row["wiek_lata"]."</td><td>".$row["płeć"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
