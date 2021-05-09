@@ -82,49 +82,43 @@ if (!$conn) {
 
 
 <?php
-$sql = ('SELECT * FROM bibliotekaAutor');
 echo("<h2>Autorzy</h2>");
-$result=$conn->query($sql);
-echo("<table border=1>");
+$result=$conn->query('SELECT * FROM bibliotekaAutor');
+echo("<table border>");
 echo("<th>id</th>");
 echo("<th>Autor</th>");
-while($row=$result->fetch_assoc())
-{
+while($row=$result->fetch_assoc()){
 echo("<tr>");
-echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>"]);
+echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
 ?>
 
 <?php
-$sql = ('SELECT * FROM bibliotekaTytuł');
 echo("<h2>Książki</h2>");
-$result=$conn->query($sql);
-echo("<table border=1>");
+$result=$conn->query('SELECT * FROM bibliotekaTytuł');
+echo("<table border>");
 echo("<th>id</th>");
 echo("<th>Tytuł</th>");
-while($row=$result->fetch_assoc())
-{
+while($row=$result->fetch_assoc()){
 echo("<tr>");
-echo("<td>".$row["id_tytuł"]."</td><td>".$row["Tytuł"]."</td>"]);
+echo("<td>".$row["id_tytuł"]."</td><td>".$row["Tytuł"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
 ?>
 
 <?php
-$sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
 echo("<h2>Wszystko</h2>");
-$result=$conn->query($sql);
-echo("<table border=1>");
+$result=$conn->query('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
+echo("<table border>");
 echo("<th>id</th>");
 echo("<th>Autor</th>");
 echo("<th>Tytuł</th>");
-while($row=$result->fetch_assoc())
-{
+while($row=$result->fetch_assoc()){
 echo("<tr>");
-echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
+echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
