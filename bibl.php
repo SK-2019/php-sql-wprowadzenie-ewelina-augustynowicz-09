@@ -80,17 +80,37 @@ if (!$conn) {
             <li><a class="nav_link" href=""> piec </a></li>
           </ul> 
 
+
 <?php
-$sql = ("SELECT * FROM bibliotekaTytuł");
-echo("<h2>książki</h2>");
+$sql = ('SELECT * FROM bibliotekaAutor');
+echo("<h2>Autorzy</h2>");
 $result=$conn->query($sql);
-echo("<select name='Tytuł' id='id_Tytuł'>");
+echo("<table border=1>");
+echo("<th>id</th>");
+echo("<th>Autor</th>");
 while($row=$result->fetch_assoc())
 {
-echo("<option vealu=>".$row["id_tytuł"]."</option><option vealu=>".$row["Tytuł"]."</option>");
+echo("<tr>");
+echo("<td>".$row["id_autor"]."</td><td>".$row["Autor"]."</td>"]);
+echo("</tr>");
 }
-echo("<input type='Submit' value='książka'><br>");
-echo("</select");
+echo("</table>");
+?>
+
+<?php
+$sql = ('SELECT * FROM bibliotekaTytuł');
+echo("<h2>Książki</h2>");
+$result=$conn->query($sql);
+echo("<table border=1>");
+echo("<th>id</th>");
+echo("<th>Tytuł</th>");
+while($row=$result->fetch_assoc())
+{
+echo("<tr>");
+echo("<td>".$row["id_tytuł"]."</td><td>".$row["Tytuł"]."</td>"]);
+echo("</tr>");
+}
+echo("</table>");
 ?>
 
 <?php
