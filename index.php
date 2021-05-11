@@ -61,6 +61,8 @@ if (!$conn) {
             <li><a class="nav_link" href="../flexbox+menu/flexbox.html"> Flexbox + menu</a></li>
             <br>
             <li><a class="nav_link" href="wieledowielu.php"> Relacja wiele do wielu</a></li>
+            <br>
+            <li><a class="nav_link" href="galeria.html"> Galeria </a></li>
           </ul> 
       </div> 
       </div>
