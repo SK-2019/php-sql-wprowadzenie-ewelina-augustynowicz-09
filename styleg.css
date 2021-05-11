@@ -1,13 +1,9 @@
-h1 {
-    background-color: rgb(184, 33, 33);
-  }
-  
   .gallery {
     display: flex;
   }
   
   .row {
-    background-color: rgb(102, 35, 35);
+    background-color: rgb(158, 22, 22);
   }
   
   .image {
