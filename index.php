@@ -34,6 +34,7 @@ if (!$conn) {
         <source src="https://vgmsite.com/soundtracks/addams-family-values/exhvgxneho/02%20Addams%20Family%20Values.mp3" type="audio/mpeg">
         </audio>
       </div> 
+      <span text-style="color: white">
     <div class="item colorRed">
         <div class="nav">
           <h2> Menu:</h2>
@@ -71,6 +72,6 @@ if (!$conn) {
   <h3> Hello :) </h3>
 </div>
 </div>
-
+</spam>
   </body>
 </html>
