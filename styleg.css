@@ -1,0 +1,66 @@
+h1 {
+    background-color: rgb(184, 33, 33);
+  }
+  
+  .gallery {
+    display: flex;
+  }
+  
+  .row {
+    background-color: rgb(102, 35, 35);
+  }
+  
+  .image {
+    background-color: rgb(134, 7, 7);
+    margin: 5px;
+    padding: 0px;
+    width: 500px;
+    height: 300px;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain, cover; */
+    background-position: center;
+    background-size: cover;
+    transition: 0.51s;
+  }
+  
+  .image:hover {
+    transform: scale(0.98);
+    filter: saturate(2.2) brightness(1.4);
+  }
+  
+  .foto01 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj97SlMeCPT0he-mm7jpnrQzbPEw0aQzohig&usqp=CAU");
+  }
+ 
+  .foto02 {
+    background-image: url("https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/5/52/Helpy_DarkRooms.gif/revision/latest?cb=20200623121306&path-prefix=pl");
+  }
+  
+  .foto03 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3hzbDzyP1ttVjn_6bfx6gUnTJThelFWcYVG3sc608q2Ag1Two8j_9z91xZWHvutrZjMA&usqp=CAU");
+  }
+  
+  .foto04 {
+    background-image: url("https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/f/f4/Helpy_FNAF3.gif/revision/latest?cb=20200614172617&path-prefix=pl");
+  }
+
+  .foto05 {
+    background-image: url("https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/3/33/FNaF1Icon.gif/revision/latest?cb=20200311113206&path-prefix=pl");
+  }
+
+  .foto06 {
+    background-image: url("https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/e/e9/Tumblr_p0ugakbvzB1ush256o1_400.gif/revision/latest?cb=20180125180150&path-prefix=pl");
+  }
+
+  .foto07 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1TtypWKSJESgbiI6Etztko0BlRHUs_kVCFKecwPQ775limGP82SPGD5jKFKO4-bkAoE&usqp=CAU");
+  }
+
+  .foto08 {
+    background-image: url("http://pa1.narvii.com/6730/fdd0f18b30b9a2c20bc27c9f681ba101677a4bcc_00.gif");
+  }
+
+  .foto09 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgtKr9orHEk2TDdkdcVl7VopmfS29sL-HOLCBUF3Nf2WEu_YSjAGNEetw_y_sSjR19qcU&usqp=CAU");
+  }
