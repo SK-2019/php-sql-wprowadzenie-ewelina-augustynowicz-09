@@ -72,11 +72,11 @@ if (!$conn) {
 <div class="nav">
           <h2> Menu:</h2>
           <ul>
-            <li><a class="nav_link" href="wynajmsam.php"> wynajem samochodów </a></li>
+            <li><a class="nav_link" href="mechanik.php"> Mechanik </a></li>
             <br>
             <li><a class="nav_link" href="schronisko.php"> Schronisko </a></li>
             <br>
-            <li><a class="nav_link" href=""> trzy </a></li>
+            <li><a class="nav_link" href="bibl.php"> Biblioteka </a></li>
             <br>
             <li><a class="nav_link" href=""> cztery </a></li>
             <br>
@@ -87,57 +87,48 @@ if (!$conn) {
   <h2>Klienci:</h2>
 <main>
     <?php
-    $result = $conn->query('SELECT id_klienta, imie_klienta, nazwisko_klienta, prawojazdy_lata, data_wyporzyczenie, data_oddania FROM wynajmsam');
+    $result = $conn->query('SELECT * FROM autoklient');
     echo("<table border>");
     echo("<table>");
     echo("<th>id klienta</th>");
     echo("<th>imie klienta</th>");
     echo("<th>nazwisko klienta</th>");
-    echo("<th>prawojazdy (lata)</th>");
-    echo("<th>data wyporzyczenie</th>");
-    echo("<th>data oddania</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
+    echo("<td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
     ?>
 </main>
 
-<h2>Samochody:</h2>
+<h2>Mechanicy:</h2>
 <main>
     <?php
-    $result = $conn->query('SELECT id_samochodu, marka_samochodu, model_samochodu FROM wynajmsam');
+    $result = $conn->query('SELECT * FROM automech');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id samochodu</th>");
-    echo("<th>marka samochodu</th>");
-    echo("<th>model samochodu</th>");
+    echo("<th>id_mechanik</th>");
+    echo("<th>imie_mechanik</th>");
+    echo("<th>nazwisko_mechanik</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td>");
+    echo("<td>".$row["id_mechanik"]."</td><td>".$row["imie_mechanik"]."</td><td>".$row["nazwisko_mechanik"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
     ?>
 </main>
 
-<h2>Klienci i wyporzyczone samochodu</h2>
+<h2>Klienci i mechanicy</h2>
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM wynajmsam');
+    $result = $conn->query('SELECT * FROM automech & autoklient');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id samochodu</th>");
-    echo("<th>marka samochodu</th>");
-    echo("<th>model samochodu</th>");
     echo("<th>id klienta</th>");
     echo("<th>imie klienta</th>");
     echo("<th>nazwisko klienta</th>");
-    echo("<th>prawojazdy (lata)</th>");
-    echo("<th>data wyporzyczenie</th>");
-    echo("<th>data oddania</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
     echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");

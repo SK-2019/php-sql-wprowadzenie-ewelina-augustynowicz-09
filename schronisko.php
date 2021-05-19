@@ -69,11 +69,11 @@ if (!$conn) {
   <div class="nav">
           <h2> Menu:</h2>
           <ul>
-            <li><a class="nav_link" href="wynajmsam.php"> Wynajem samochodów </a></li>
+            <li><a class="nav_link" href="mechanik.php"> Mechanik </a></li>
             <br>
             <li><a class="nav_link" href="schronisko.php"> Schronisko </a></li>
             <br>
-            <li><a class="nav_link" href=""> biblioteka </a></li>
+            <li><a class="nav_link" href="bibl.php"> Biblioteka </a></li>
             <br>
             <li><a class="nav_link" href=""> cztery </a></li>
             <br>
