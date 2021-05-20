@@ -73,12 +73,65 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="sklep.php"> Sklep </a></li>
             <br>
-            <li><a class="nav_link" href="bibl.php">Biblioteka </a></li>
+            <li><a class="nav_link" href="bibl.php"> Biblioteka </a></li>
             <br>
             <li><a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a></li>
             <br>
             <li><a class="nav_link" href=""> piec </a></li>
           </ul> 
+
+          <main>
+    <?php
+    $result = $conn->query('SELECT * FROM prawnicy');
+    echo("<table border>");
+    echo("<table>");
+    echo("<th>id_prawnika</th>");
+    echo("<th>imię_prawnika</th>");
+    echo("<th>nazwisko_prawnika</th>");
+    while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row["id_prawnika"]."</td><td>".$row["imię_prawnika"]."</td><td>".$row["nazwisko_prawnika"]."</td>");
+    echo("</tr>");
+    }
+    echo("</table>")
+    ?>
+</main>
+
+<main>
+    <?php
+    $result = $conn->query('SELECT * FROM rozprawa');
+    echo("<table border>");
+    echo("<table>");
+    echo("<th>nr_rozprawy</th>");
+    echo("<th>sprawa</th>");
+    while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row["nr_rozprawy"]."</td><td>".$row["sprawa"]."</td>");
+    echo("</tr>");
+    }
+    echo("</table>")
+    ?>
+</main>
+
+<main>
+    <?php
+    $result = $conn->query('SELECT * FROM ');
+    echo("<table border>");
+    echo("<table>");
+    echo("<th></th>");
+    echo("<th></th>");
+    echo("<th></th>");
+    echo("<th></th>");
+    echo("<th></th>");
+    while($row = $result->fetch_assoc()) {
+    echo("<tr>");
+    echo("<td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td>");
+    echo("</tr>");
+    }
+    echo("</table>")
+    ?>
+</main>
+
 </div>
 </div>
 

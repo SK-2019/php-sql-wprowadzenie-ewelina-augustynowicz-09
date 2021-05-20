@@ -78,7 +78,7 @@ if (!$conn) {
             <br>
             <li><a class="nav_link" href="bibl.php"> Biblioteka </a></li>
             <br>
-            <li><a class="nav_link" href=""> cztery </a></li>
+            <li><a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a></li>
             <br>
             <li><a class="nav_link" href=""> piec </a></li>
           </ul> 
