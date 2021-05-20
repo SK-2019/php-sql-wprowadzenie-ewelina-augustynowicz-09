@@ -86,11 +86,11 @@ if (!$conn) {
     echo("<table border>");
     echo("<table>");
     echo("<th>id_prawnika</th>");
-    echo("<th>imię_prawnika</th>");
+    echo("<th>imie_prawnika</th>");
     echo("<th>nazwisko_prawnika</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id_prawnika"]."</td><td>".$row["imię_prawnika"]."</td><td>".$row["nazwisko_prawnika"]."</td>");
+    echo("<td>".$row["id_prawnika"]."</td><td>".$row["imie_prawnika"]."</td><td>".$row["nazwisko_prawnika"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
