@@ -90,9 +90,9 @@ if (!$conn) {
     $result = $conn->query('SELECT * FROM autoklient');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id klienta</th>");
-    echo("<th>imie klienta</th>");
-    echo("<th>nazwisko klienta</th>");
+    echo("<th>id_klienta</th>");
+    echo("<th>imie_klienta</th>");
+    echo("<th>nazwisko_klienta</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
     echo("<td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td>");
@@ -123,15 +123,21 @@ if (!$conn) {
 <h2>Klienci i mechanicy</h2>
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM automech & autoklient');
+    $result = $conn->query('SELECT * FROM automech, autoklient, automk, where id_mechanik = id_mechanik, imie_mechanik = imie_mechanik, nazwisko_mechanik = nazwisko_mechanik, id_klienta = id_klienta, imie_klienta = imie_klienta, nazwisko_klienta = nazwisko_klienta');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id klienta</th>");
-    echo("<th>imie klienta</th>");
-    echo("<th>nazwisko klienta</th>");
+    echo("<th>id_mechanik</th>");
+    echo("<th>imie_mechanik</th>");
+    echo("<th>nazwisko_mechanik</th>");
+    echo("<th>id_samochodu</th>");
+    echo("<th>marka_samochodu</th>");
+    echo("<th>model_samochodu</th>");
+    echo("<th>id_klienta</th>");
+    echo("<th>imie_klienta</th>");
+    echo("<th>nazwisko_klienta</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
+    echo("<td>".$row["id_mechanik"]."</td><td>".$row["imie_mechanik"]."</td><td>".$row["nazwisko_mechanik"]."</td><td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
