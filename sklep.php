@@ -71,7 +71,7 @@ if (!$conn) {
           <ul>
             <li><a class="nav_link" href="mechanik.php"> Mechanik </a></li>
             <br>
-            <li><a class="nav_link" href="schronisko.php"> Schronisko </a></li>
+            <li><a class="nav_link" href="sklep.php"> Sklep </a></li>
             <br>
             <li><a class="nav_link" href="bibl.php"> Biblioteka </a></li>
             <br>
@@ -80,40 +80,35 @@ if (!$conn) {
             <li><a class="nav_link" href=""> piec </a></li>
           </ul> 
 
-          <h2>Koty:</h2>
+          <h2>Produkty:</h2>
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM koty');
+    $result = $conn->query('SELECT * FROM sklepprodukt');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id</th>");
-    echo("<th>imie kota</th>");
-    echo("<th>rasa</th>");
-    echo("<th>wiek (lata)</th>");
-    echo("<th>płeć</th>");
+    echo("<th>id_produkt</th>");
+    echo("<th>produkt</th>");
+    echo("<th>cena</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id"]."</td><td>".$row["imie_kota"]."</td><td>".$row["rasa"]."</td><td>".$row["wiek_lata"]."</td><td>".$row["płeć"]."</td>");
+    echo("<td>".$row["id_produkt"]."</td><td>".$row["produkt"]."</td><td>".$row["cena"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
     ?>
 </main>
 
-<h2>Psy:</h2>
+<h2>Producenci:</h2>
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM psy');
+    $result = $conn->query('SELECT * FROM sklepproducent');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id</th>");
-    echo("<th>imie psa</th>");
-    echo("<th>rasa</th>");
-    echo("<th>wiek (lata)</th>");
-    echo("<th>płeć</th>");
+    echo("<th>id_producent</th>");
+    echo("<th>producent</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id"]."</td><td>".$row["imie_psa"]."</td><td>".$row["rasa"]."</td><td>".$row["wiek_lata"]."</td><td>".$row["płeć"]."</td>");
+    echo("<td>".$row["id_producent"]."</td><td>".$row["producent"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
@@ -122,17 +117,17 @@ if (!$conn) {
 
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM koty AND psy WHERE id=id, wiek_lata=wiek_lata, płeć=płeć, rasa=rasa, imie_kota=imie_psa');
+    $result = $conn->query('SELECT * FROM ');
     echo("<table border>");
     echo("<table>");
-    echo("<th>id</th>");
-    echo("<th>imie kota/psa</th>");
-    echo("<th>rasa</th>");
-    echo("<th>wiek (lata)</th>");
-    echo("<th>płeć</th>");
+    echo("<th></th>");
+    echo("<th></th>");
+    echo("<th></th>");
+    echo("<th></th>");
+    echo("<th></th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id"]."</td><td>".$row["imie_kota"]."</td><td>".$row["rasa"]."</td><td>".$row["wiek_lata"]."</td><td>".$row["płeć"]."</td>");
+    echo("<td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td>");
     echo("</tr>");
     }
     echo("</table>")
