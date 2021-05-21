@@ -125,7 +125,7 @@ if (!$conn) {
     echo("<th>produkt</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["producent"]."</td><td>".$row["produkt"]."</td>");
+    echo("<td>".$row["id_producen"]."</td><td>".$row["id_produk"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
