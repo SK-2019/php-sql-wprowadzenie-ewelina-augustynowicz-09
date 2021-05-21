@@ -115,9 +115,10 @@ if (!$conn) {
     ?>
 </main>
 
+<h2>Sklep</h2>
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM sklep, sklepproducent, sklepprodukt WHERE id_producent=producent AND id_produkt=produkt');
+    $result = $conn->query('SELECT * FROM sklep, sklepproducent, sklepprodukt WHERE id_producen=producent AND id_produk=produkt');
     echo("<table border>");
     echo("<table>");
     echo("<th>producent</th>");
