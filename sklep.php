@@ -86,7 +86,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM sklepprodukt');
     echo("<table border>");
-    echo("<table>");
     echo("<th>id_produkt</th>");
     echo("<th>produkt</th>");
     echo("<th>cena</th>");
@@ -104,7 +103,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM sklepproducent');
     echo("<table border>");
-    echo("<table>");
     echo("<th>id_producent</th>");
     echo("<th>producent</th>");
     while($row = $result->fetch_assoc()) {
@@ -121,7 +119,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM sklep');
     echo("<table border>");
-    echo("<table>");
     echo("<th>producent</th>");
     echo("<th>produkt</th>");
     while($row = $result->fetch_assoc()) {

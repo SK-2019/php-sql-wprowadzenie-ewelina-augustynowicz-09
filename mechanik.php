@@ -105,7 +105,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM automech');
     echo("<table border>");
-    echo("<table>");
     echo("<th>id_mechanik</th>");
     echo("<th>imie_mechanik</th>");
     echo("<th>nazwisko_mechanik</th>");
@@ -123,7 +122,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM automk');
     echo("<table border>");
-    echo("<table>");
     echo("<th>id_mechanik</th>");
     echo("<th>imie_mechanik</th>");
     echo("<th>nazwisko_mechanik</th>");

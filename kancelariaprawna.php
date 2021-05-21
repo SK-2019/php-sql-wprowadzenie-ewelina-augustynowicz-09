@@ -86,7 +86,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM prawnicy');
     echo("<table border>");
-    echo("<table>");
     echo("<th>id_prawnika</th>");
     echo("<th>imie_prawnika</th>");
     echo("<th>nazwisko_prawnika</th>");
@@ -104,7 +103,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM rozprawa');
     echo("<table border>");
-    echo("<table>");
     echo("<th>nr_rozprawy</th>");
     echo("<th>sprawa</th>");
     while($row = $result->fetch_assoc()) {
@@ -121,7 +119,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM kancelariaprawnicz');
     echo("<table border>");
-    echo("<table>");
     echo("<th>imie_prawnika</th>");
     echo("<th>nazwisko_prawnika</th>");
     echo("<th>sprawa</th>");
