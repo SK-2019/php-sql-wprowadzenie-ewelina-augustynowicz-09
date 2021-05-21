@@ -77,12 +77,12 @@ if (!$conn) {
             
             <a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a>
           
-            <a class="nav_link" href=""> piec </a>
+            <a class="nav_link" href="szkola.php"> szkoła </a>
           </ul> 
           </header>          
 
-          <main>
-          <h2>Autorzy:</h2>
+<main>
+<h2>Autorzy:</h2>
 <?php
 $result=$conn->query('SELECT * FROM bibliotekaAutor');
 echo("<table border>");

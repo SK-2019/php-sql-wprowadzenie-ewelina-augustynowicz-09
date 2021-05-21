@@ -66,7 +66,6 @@ if (!$conn) {
     
 <div class="item colorGreen">
 <header>
-  <h3> Hello :) </h3>
   <div class="nav">
           <h2> Menu:</h2>
           <ul>
@@ -81,6 +80,57 @@ if (!$conn) {
             <a class="nav_link" href="szkola.php"> szkoła </a>
           </ul> 
           </header>
+
+          <main>
+<h2>Klasy:</h2>
+<?php
+$result=$conn->query('SELECT * FROM klasa');
+echo("<table border>");
+echo("<th>id_klasa</th>");
+echo("<th>klasa</th>");
+echo("<th>ilosc_uczniow</th>");
+while($row=$result->fetch_assoc()){
+echo("<tr>");
+echo("<td>".$row["id_klasa"]."</td><td>".$row["klasa"]."</td><td>".$row["ilosc_uczniow"]."</td>");
+echo("</tr>");
+}
+echo("</table>");
+?>
+</main>
+
+<main>
+<h2>Nauczyciele:</h2>
+<?php
+$result=$conn->query('SELECT * FROM nauczyciele');
+echo("<table border>");
+echo("<th>id_nauczyciela</th>");
+echo("<th>imie_nauczyciela</th>");
+echo("<th>nazwisko_nauczyciela</th>");
+while($row=$result->fetch_assoc()){
+echo("<tr>");
+echo("<td>".$row["id_nauczyciela"]."</td><td>".$row["imie_nauczyciela"]."</td><td>".$row["nazwisko_nauczyciela"]."</td>");
+echo("</tr>");
+}
+echo("</table>");
+?>
+</main>
+
+<main>
+<h2>Szkoła:</h2>
+<?php
+$result=$conn->query('SELECT * FROM ');
+echo("<table border>");
+echo("<th></th>");
+echo("<th></th>");
+while($row=$result->fetch_assoc()){
+echo("<tr>");
+echo("<td>".$row[""]."</td><td>".$row[""]."</td>");
+echo("</tr>");
+}
+echo("</table>");
+?>
+</main>
+
 </div>
 </div>
 

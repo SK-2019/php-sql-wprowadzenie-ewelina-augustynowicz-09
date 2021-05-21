@@ -77,7 +77,7 @@ if (!$conn) {
             
             <a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a>
             
-            <a class="nav_link" href=""> piec </a>
+            <a class="nav_link" href="szkola.php"> szkoła </a>
           </ul> 
           </header>
 
