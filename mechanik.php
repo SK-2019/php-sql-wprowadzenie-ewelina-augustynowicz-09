@@ -67,7 +67,6 @@ if (!$conn) {
       </div>
     
 <div class="item colorGreen">
-  <h3> Hello :) </h3>
   <header>
 <div class="nav">
           <h2> Menu:</h2>

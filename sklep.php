@@ -117,17 +117,14 @@ if (!$conn) {
 
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM ');
+    $result = $conn->query('SELECT * FROM sklep, sklepproducent, sklepprodukt WHERE id_producent=producent AND id_produkt=produkt');
     echo("<table border>");
     echo("<table>");
-    echo("<th></th>");
-    echo("<th></th>");
-    echo("<th></th>");
-    echo("<th></th>");
-    echo("<th></th>");
+    echo("<th>producent</th>");
+    echo("<th>produkt</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td>");
+    echo("<td>".$row["producent"]."</td><td>".$row["produkt"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
