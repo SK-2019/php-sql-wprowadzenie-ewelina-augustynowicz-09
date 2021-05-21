@@ -88,7 +88,6 @@ if (!$conn) {
     <?php
     $result = $conn->query('SELECT * FROM autoklient');
     echo("<table border>");
-    echo("<table>");
     echo("<th>id_klienta</th>");
     echo("<th>imie_klienta</th>");
     echo("<th>nazwisko_klienta</th>");
