@@ -24,6 +24,7 @@ if (!$conn) {
     <title>Ewelina Augustynowicz 2Ti gr.2</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+<body style="color: white"> 
   <body>
   <div class="tekst">
       <div class="container">
@@ -142,5 +143,6 @@ if (!$conn) {
 
 </div>
 </div>
+</body>
 </body>
 </html>
