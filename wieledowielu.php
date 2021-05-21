@@ -65,20 +65,22 @@ if (!$conn) {
       </div>
     
 <div class="item colorGreen">
+<header>
   <h3> Hello :) </h3>
   <div class="nav">
           <h2> Menu:</h2>
           <ul>
-            <li><a class="nav_link" href="mechanik.php"> Mechanik </a></li>
-            <br>
-            <li><a class="nav_link" href="sklep.php"> Sklep </a></li>
-            <br>
-            <li><a class="nav_link" href="bibl.php">Biblioteka </a></li>
-            <br>
-            <li><a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a></li>
-            <br>
-            <li><a class="nav_link" href=""> piec </a></li>
+            <a class="nav_link" href="mechanik.php"> Mechanik </a>
+            
+            <a class="nav_link" href="sklep.php"> Sklep </a>
+            
+            <a class="nav_link" href="bibl.php">Biblioteka </a>
+            
+            <a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a>
+            
+            <a class="nav_link" href=""> piec </a>
           </ul> 
+          </header>
 </div>
 </div>
 

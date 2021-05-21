@@ -65,22 +65,24 @@ if (!$conn) {
       </div>
     
 <div class="item colorGreen">
-  <h3> Hello :) </h3>
+<header>
   <div class="nav">
           <h2> Menu:</h2>
           <ul>
-            <li><a class="nav_link" href="mechanik.php"> Mechanik </a></li>
-            <br>
-            <li><a class="nav_link" href="sklep.php"> Sklep </a></li>
-            <br>
-            <li><a class="nav_link" href="bibl.php"> Biblioteka </a></li>
-            <br>
-            <li><a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a></li>
-            <br>
-            <li><a class="nav_link" href=""> piec </a></li>
+            <a class="nav_link" href="mechanik.php"> Mechanik </a>
+            
+            <a class="nav_link" href="sklep.php"> Sklep </a>
+            
+            <a class="nav_link" href="bibl.php"> Biblioteka </a>
+            
+            <a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a>
+            
+            <a class="nav_link" href=""> piec </a>
           </ul> 
+          </header>
 
           <main>
+          <h2>Prawnicy:</h2>
     <?php
     $result = $conn->query('SELECT * FROM prawnicy');
     echo("<table border>");
@@ -98,6 +100,7 @@ if (!$conn) {
 </main>
 
 <main>
+<h2>Sprawy:</h2>
     <?php
     $result = $conn->query('SELECT * FROM rozprawa');
     echo("<table border>");
@@ -114,18 +117,17 @@ if (!$conn) {
 </main>
 
 <main>
+<h2>Prawnicy i sprawy:</h2>
     <?php
-    $result = $conn->query('SELECT * FROM ');
+    $result = $conn->query('SELECT * FROM kancelariaprawnicz');
     echo("<table border>");
     echo("<table>");
-    echo("<th></th>");
-    echo("<th></th>");
-    echo("<th></th>");
-    echo("<th></th>");
-    echo("<th></th>");
+    echo("<th>imie_prawnika</th>");
+    echo("<th>nazwisko_prawnika</th>");
+    echo("<th>sprawa</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td>");
+    echo("<td>".$row["imie_prawnika"]."</td><td>".$row["nazwisko_prawnika"]."</td><td>".$row["sprawa"]."</td>");
     echo("</tr>");
     }
     echo("</table>")

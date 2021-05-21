@@ -65,6 +65,7 @@ if (!$conn) {
       </div>
     
 <div class="item colorGreen">
+<header>
   <div class="nav">
           <h2> Menu:</h2>
           <ul>
@@ -78,6 +79,7 @@ if (!$conn) {
             
             <a class="nav_link" href=""> piec </a>
           </ul> 
+          </header>
 
           <h2>Produkty:</h2>
 <main>

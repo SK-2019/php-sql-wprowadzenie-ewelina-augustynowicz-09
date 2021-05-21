@@ -65,24 +65,25 @@ if (!$conn) {
       </div>
     
 <div class="item colorGreen">
-  <h3> Hello :) </h3>
+<header>
   <div class="nav">
           <h2> Menu:</h2>
           <ul>
-            <li><a class="nav_link" href="mechanik.php"> Mechanik </a></li>
-            <br>
-            <li><a class="nav_link" href="sklep.php"> Sklep </a></li>
-            <br>
-            <li><a class="nav_link" href="bibl.php"> biblioteka </a></li>
-            <br>
-            <li><a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a></li>
-            <br>
-            <li><a class="nav_link" href=""> piec </a></li>
+            <a class="nav_link" href="mechanik.php"> Mechanik </a>
+            
+            <a class="nav_link" href="sklep.php"> Sklep </a>
+            
+            <a class="nav_link" href="bibl.php"> biblioteka </a>
+            
+            <a class="nav_link" href="kancelariaprawna.php"> Kancelaria prawna </a>
+          
+            <a class="nav_link" href=""> piec </a>
           </ul> 
+          </header>          
 
-
+          <main>
+          <h2>Autorzy:</h2>
 <?php
-echo("<h2>Autorzy</h2>");
 $result=$conn->query('SELECT * FROM bibliotekaAutor');
 echo("<table border>");
 echo("<th>id</th>");
@@ -94,9 +95,11 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+</main>
 
+<main>
+<h2>Książki:</h2>
 <?php
-echo("<h2>Książki</h2>");
 $result=$conn->query('SELECT * FROM bibliotekaTytuł');
 echo("<table border>");
 echo("<th>id</th>");
@@ -108,9 +111,11 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+</main>
 
+<main>
+<h2>Wszystko:</h2>
 <?php
-echo("<h2>Wszystko</h2>");
 $result=$conn->query('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
 echo("<table border>");
 echo("<th>id</th>");
@@ -123,6 +128,7 @@ echo("</tr>");
 }
 echo("</table>");
 ?>
+</main>
 
 </div>
 </div>
