@@ -119,7 +119,7 @@ if (!$conn) {
     echo("</table>")
     ?>
 </main>
-
+  
 <h2>Klienci i mechanicy</h2>
 <main>
     <?php
