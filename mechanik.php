@@ -121,9 +121,10 @@ if (!$conn) {
 </main>
   
 <h2>Klienci i mechanicy</h2>
+<h1>test</h1>
 <main>
     <?php
-    $result = $conn->query('SELECT * FROM automech AND autoklient AND automk WHERE id_mechanik=id_mechanik AND imie_mechanik=imie_mechanik AND nazwisko_mechanik=nazwisko_mechanik AND id_klienta=id_klienta AND imie_klienta=imie_klienta AND nazwisko_klienta=nazwisko_klienta');
+    $result = $conn->query('SELECT * FROM automech, autoklient, automk WHERE id_mechanik=id_mechanik AND imie_mechanik=imie_mechanik AND nazwisko_mechanik=nazwisko_mechanik AND id_klienta=id_klienta AND imie_klienta=imie_klienta AND nazwisko_klienta=nazwisko_klienta');
     echo("<table border>");
     echo("<table>");
     echo("<th>id_mechanik</th>");
