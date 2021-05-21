@@ -118,13 +118,13 @@ echo("</table>");
 <main>
 <h2>Szkoła:</h2>
 <?php
-$result=$conn->query('SELECT * FROM ');
+$result=$conn->query('SELECT * FROM szkola');
 echo("<table border>");
-echo("<th></th>");
-echo("<th></th>");
+echo("<th>nauczyciel</th>");
+echo("<th>klasa</th>");
 while($row=$result->fetch_assoc()){
 echo("<tr>");
-echo("<td>".$row[""]."</td><td>".$row[""]."</td>");
+echo("<td>".$row["nauczyciel"]."</td><td>".$row["klasa"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
