@@ -121,7 +121,7 @@ if (!$conn) {
 </main>
   
 <h2>Klienci i mechanicy</h2>
-<h1>test3</h1>
+<h1>test5</h1>
 <main>
     <?php
     $result = $conn->query('SELECT * FROM automk');
@@ -138,7 +138,7 @@ if (!$conn) {
     echo("<th>nazwisko_klienta</th>");
     while($row = $result->fetch_assoc()) {
     echo("<tr>");
-    echo("<td>".$row["id_mechanik"]."</td><td>".$row["imie_mechanik"]."</td><td>".$row["nazwisko_mechanik"]."</td><td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td><td>".$row["prawojazdy_lata"]."</td><td>".$row["data_wyporzyczenie"]."</td><td>".$row["data_oddania"]."</td>");
+    echo("<td>".$row["id_mechanik"]."</td><td>".$row["imie_mechanik"]."</td><td>".$row["nazwisko_mechanik"]."</td><td>".$row["id_samochodu"]."</td><td>".$row["marka_samochodu"]."</td><td>".$row["model_samochodu"]."</td><td>".$row["id_klienta"]."</td><td>".$row["imie_klienta"]."</td><td>".$row["nazwisko_klienta"]."</td>");
     echo("</tr>");
     }
     echo("</table>")
